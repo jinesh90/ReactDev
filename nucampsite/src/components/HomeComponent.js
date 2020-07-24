@@ -3,15 +3,13 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
 function RenderCard({item}) {
     return (
-        <div className="col-md-5 m-1">
-        {/*<Card>*/}
-            {/*<CardImg src={item.image} alt={item.name} />*/}
-            {/*<CardBody>*/}
-                {/*<CardTitle>{item.name}</CardTitle>*/}
-                {/*<CardText>{item.description}</CardText>*/}
-            {/*</CardBody>*/}
-        {/*</Card>*/}
-        </div>
+        <Card>
+            <CardImg src={item.image} alt={item.name} />
+            <CardBody>
+                <CardTitle>{item.name}</CardTitle>
+                <CardText>{item.description}</CardText>
+            </CardBody>
+        </Card>
     );
 }
 
